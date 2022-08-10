@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+section{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    background-color:rosybrown;
+}
+.two{
+    background-color:black ;
+}
+
+.three{
+    background-color: darkolivegreen;
+
+}
+.four{
+    background-color: rgb(48, 39, 58);
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc(100vw - 1300px) / 2;
+
+}
+
+.columnLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding: 0rem 2rem;
+}
+.columnLeft h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+ font-weight: lighter;
+    
+}
+.columnLeft p{
+margin-bottom: 8rem;
+font-size: 4rem;
+line-height: 1.1;
+color: rgb(255, 255, 255);
+}
+.columnLeft h2{
+    color: rgb(255, 255, 255);
+    font-size: small;
+    border-bottom: 1px solid #fff;
+}
+button{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    background:none;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.text{
+    color: black;
+
+}
+
+.columRigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+   
+}
+.image{
+    width: 80%;
+    height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media screen and (max-width: 760px){
+.conteiner{
+    grid-template-columns:  1fr;
+
+}
+}
+    
